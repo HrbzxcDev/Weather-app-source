@@ -15,9 +15,9 @@ import { StyledGlobal, StyledDashboard } from '../styles';
 import { themeLight, themeDark } from '../constants';
 import { useImageFetch } from '../hooks/useImageFetch';
 import { useCoordinations } from '../hooks/useCoordinations';
-import { useWeatherFetch } from '../hooks/useWeatherFetch';
+import { useWeatherFetch} from '../hooks/useWeatherFetch';
 import { useNightMode } from '../hooks/useNightMode';
-import { SEARCH_BY_WORD } from '../api';
+import { SEARCH_BY_WORD } from '../api/ipa';
 import { useTempUnit } from '../hooks/UseTempUnit';
 
 

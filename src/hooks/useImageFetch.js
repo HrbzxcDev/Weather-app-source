@@ -16,6 +16,6 @@ export const useImageFetch = () => {
         fetchImage(`${SEARCH_DEFAULT}`);
     }, []);
 
-    return [image, fecthImage];
+    return [image, fetchImage];
 
 }

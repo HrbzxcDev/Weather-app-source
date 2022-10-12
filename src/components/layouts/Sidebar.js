@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "../elements/Searchbar";
 import WeatherIcon from "../elements/WeatherIcon";
-import LocationBox from "../elements/Locationbox";
+import Locationbox from "../elements/Locationbox";
 import WeatherInfo from "../elements/WeatherInfo";
 import { StyledSidebar } from "./../../styles";
 import { countries } from "country-data";
@@ -29,7 +29,7 @@ const Sidebar = ({
             {data.weather[0] && <WeatherIcon Icon={data.weather[0].Icon} />}
             <WeatherInfo data={data} unit={unitTemp} />
             {titleLocation.country && (
-                <LocationBox
+                <Locationbox
                     image={image}
                     titleLocation={
                         titleLocation.city  + ", " + countries[titleLocation.country].name
