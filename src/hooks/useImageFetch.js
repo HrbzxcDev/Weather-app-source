@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { SEARCH_DEFAULT } from '../api';
+import { SEARCH_DEFAULT } from '../api/ipa';
 
 export const useImageFetch = () => {
     const [image, setImage] = useState('');
-    const fecthImage = async endpoint => {
+    const fetchImage = async endpoint => {
         try {
             const result = await (await fetch(endpoint)).json();
             setImage(result.results[Math.floor(Math.random() * 10)].urls.regular);
@@ -13,7 +13,7 @@ export const useImageFetch = () => {
         }
     }
     useEffect(() => {
-        fecthImage(`${SEARCH_DEFAULT}`);
+        fetchImage(`${SEARCH_DEFAULT}`);
     }, []);
 
     return [image, fecthImage];

@@ -24,15 +24,15 @@ import { useTempUnit } from '../hooks/UseTempUnit';
 
 const Dashboard = () => {
 
-    const[nightmode, nightmodeChanged] = useNightMode();
+    const[nightMode, nightmodeChanged] = useNightMode();
     const[unitmode, unitModeChanged] = useTempUnit();
     const[image, fetchImage] = useImageFetch();
     const[{ lat, long }, loadingLocation, findCoordinates] = useCoordinations();
-    const[weather, loading, error, fetchWeather, searchbyLoc, getWeatherLoc] = useWeatherFetch();
+    const[weather, loading, error, fetchWeather, searchbyLocation, getWeatherLocation] = useWeatherFetch();
     const[showDays, setShowDays] = useState(false);
     const fetchCoordinates = () => {
         findCoordinates();
-        getWeatherLoc(lat,long);
+        getWeatherLocation(lat,long);
     }
     const nightmodeCallback = () => {
         nightmodeChanged();
@@ -41,7 +41,7 @@ const Dashboard = () => {
         setShowDays(enabled);
     }
     const dosearchLocation = (searchTerm) => {
-        searchbyLoc(searchTerm);
+        searchbyLocation(searchTerm);
         fetchImage(`${SEARCH_BY_WORD}${weather.city}`); 
     }
     const unitTempCallBack = (enabled) =>{
@@ -53,7 +53,7 @@ const Dashboard = () => {
         
         useEffect(()=>{
             //default fetching..
-            getWeatherLoc(lat,long);
+            getWeatherLocation(lat,long);
             fetchImage(`${SEARCH_BY_WORD}${weather.city}`);
         },[lat,long])
   
@@ -61,7 +61,7 @@ const Dashboard = () => {
     if (!weather) return <ThemeProvider theme={nightMode ? themeDark : themeLight} ><Spinner /><StyledGlobal /></ThemeProvider>
 
     return (
-        <ThemeProvider theme={nightmode ? themeDark : themeLight}>
+        <ThemeProvider theme={nightMode ? themeDark : themeLight}>
             <StyledDashboard>
                 <Sidebar
                     findCoordinates={fetchCoordinates}
@@ -77,7 +77,7 @@ const Dashboard = () => {
                         unitmode = {unitmode}
                         unitTempCallback = {unitTempCallBack}
                         nightmodeCallback = {nightmodeCallback}
-                        nightmode={nightmode}
+                        nightMode={nightMode}
                         showDaysCallBack = {showDaysCallBack}
                         showActive = {showDays}
                     />
