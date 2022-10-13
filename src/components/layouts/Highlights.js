@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledHighlights } from '../../styles';
+import { StyledHighlights } from './../../styles';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FiArrowDown, FiArrowUp } from 'react-icons/fi';
 import { WiHumidity, WiBarometer } from 'react-icons/wi';

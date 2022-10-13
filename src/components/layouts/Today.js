@@ -5,9 +5,7 @@ import { convertC, convertF } from '../../helpers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-// import 'swiper/swiper.scss';
 import 'swiper';
-
 
 const Today = ({ data,tempUnit }) => (
 <StyledToday>
