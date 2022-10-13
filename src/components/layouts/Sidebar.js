@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "../elements/searchBar";
+import SearchBar from "../elements/Searchbar";
 import WeatherIcon from "../elements/WeatherIcon";
-import LocationBox from "../elements/LocationBox";
+import LocationBox from "../elements/Locationbox";
 import WeatherInfo from "../elements/WeatherInfo";
 import { StyledSidebar } from "./../../styles";
 import { countries } from "country-data";
