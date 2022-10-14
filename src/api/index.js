@@ -23,9 +23,12 @@ const DEF_N_D_H = `https://api.openweathermap.org/data/2.5/weather?exclude=minut
 
 
 //*** UNSPLASH ****//
-const URL_UNSPLASH = "https://api.unsplash.com/search/photos";
-const SEARCH_BY_WORD = `${URL_UNSPLASH}?client_id=${API_UNPSLASH}&page=1&query=`;
-const SEARCH_DEFAULT = `${URL_UNSPLASH}?client_id=${API_UNPSLASH}&page=1&query=Manila`;
+// const URL_UNSPLASH = "https://api.unsplash.com/search/photos";
+const SEARCH_BY_WORD = `https://api.unsplash.com/search/photos?client_id=${API_UNPSLASH}`;
+const SEARCH_DEFAULT = `https://api.unsplash.com/search/photos?client_id=${API_UNPSLASH}&page=1&query=nature`;
+
+
+// https://api.unsplash.com/search/photos?client_id=zQBAMwwBJYv7a4vFQd7rKPOMr_mVoZC7OkIsHb4jMVY&page=1&query=nature
 
 export {
   API_URL_APPID,

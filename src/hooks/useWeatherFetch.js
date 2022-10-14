@@ -72,10 +72,10 @@ export const useWeatherFetch = (searchCity, lat = '', long = '') => {
             setWeather({ ...res, city: res.name, country: res.sys.country });
         });
         //fetch next days
-        fetchWeather(`${DEF_N_D_H}`).then((res) => {
-            setWeather(prev => ({ ...prev, daily: res.daily, hourly: res.hourly, current: res.current }));
-            setLoading(false);
-        });
+        // fetchWeather(`${DEF_N_D_H}`).then((res) => {
+        //     setWeather(prev => ({ ...prev, daily: res.daily, hourly: res.hourly, current: res.current }));
+        //     setLoading(false);
+        // });
 
 
     }, []);

@@ -76,13 +76,13 @@ const StyledSidebar = styled.div`
             }
         }
     }
- .search__box{
+.search__box{
     @media(max-width:480px){
         flex:14;
     }
  }   
 .icon_weather{
-    margin:30px 0;
+    margin:30px 40px;
     @media(max-width:480px){
         margin:10px 0; 
     }
@@ -90,6 +90,7 @@ const StyledSidebar = styled.div`
     
 .temperature{
     padding-bottom:30px;
+    margin: 0 40px;
     font-size:80px;
     font-weight: 300;
     color:${props => props.theme.textColor};
@@ -117,11 +118,13 @@ const StyledSidebar = styled.div`
 
 .day{
     font-size:18px;
+    margin: 0 50px;
     color:${props => props.theme.textColor};
     font-weight:900;
 }
 .hours{
     font-size:20px;
+    margin: 0 -50px;
     color:${props => props.theme.textLightColor};
     padding-left:5px;
     font-weight:bold;
@@ -135,7 +138,7 @@ hr{
     margin:30px 0;
 }
 .info-weather{
-    font-size:14px;
+    font-size:15px;
     @media(max-width:480px){
         font-size:20px;
     }
