@@ -25,7 +25,7 @@ const StyledHeader = styled.div`
         div{
             font-family: "Averta-Regular";
             background:${props => props.theme.bgTemp};
-            border-radius:30px;
+            border-radius:10px;
             width:39px;
             height:39px;
             color:${props => props.theme.bgTempText};
@@ -46,7 +46,7 @@ const StyledHeader = styled.div`
     
     .label {
         background-color: #111;
-        border-radius: 50px;
+        border-radius: 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -60,7 +60,7 @@ const StyledHeader = styled.div`
     }
     .label .ball {
         background-color: #fff;
-        border-radius: 50%;
+        border-radius: 40%;
         position: absolute;
         top: 2px;
         left: 2px;

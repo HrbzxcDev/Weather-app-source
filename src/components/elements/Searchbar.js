@@ -25,7 +25,7 @@ const SearchBar = ({ findCoordinates, searchCallback, error }) => {
                 </div>
                 <div className="gray-border" onClick={findCoordinates}><MdGpsFixed /></div>
             </div>
-            {error && (<div className="error">Please Type Your Place!</div>)}
+            {error && (<div className="error">Please type your place!</div>)}
         </div>);
 
 };
