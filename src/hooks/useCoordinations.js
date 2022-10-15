@@ -15,8 +15,8 @@ export const useCoordinations = () => {
                 
                 
             }, (positionError) => {
-                setLat('41.390205');
-                setLong('2.154007');
+                setLat('14.599512');
+                setLong('120.984222');
                 console.log(positionError);
             });
             setLoadingLocation(false);

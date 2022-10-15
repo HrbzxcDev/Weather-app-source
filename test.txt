@@ -27,3 +27,18 @@ https://api.openweathermap.org/data/2.5/weather?lat=41.390205&lon=2.154007&appid
 
 
 https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+
+
+https://api.openweathermap.org/data/2.5/onecall?lat=41.390205&lon=2.154007&exclude=minutely&appid=5315bb5397580f813290687e351cef68
+
+https://api.openweathermap.org/data/2.5/onecall?lat=41.390205&lon=2.154007&exclude=minutely&appid=5315bb5397580f813290687e351cef68
+
+
+https://api.openweathermap.org/data/2.5/weather?lat=14.600528&lon=120.986055&appid=5315bb5397580f813290687e351cef68
+
+
+http://maps.openweathermap.org/maps/2.0/weather/TA2/{z}/{x}/{y}?date=1527811200&opacity=0.9&fill_bound=true&palette=0:FF0000;10:00FF00;20:0000FF&appid=5315bb5397580f813290687e351cef68
+
+https://api.open-meteo.com/v1/forecast?latitude=14.600528&longitude=120.986055&daily=GMT
+
+https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,rain&daily=weathercode&timezone=Asia%2FTokyo
