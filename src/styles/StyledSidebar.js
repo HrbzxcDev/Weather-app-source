@@ -84,7 +84,7 @@ const StyledSidebar = styled.div`
 .icon_weather{
     margin:30px 40px;
     @media(max-width:480px){
-        margin:10px 0; 
+        margin: 0 75px; 
     }
 }
     
@@ -93,6 +93,9 @@ const StyledSidebar = styled.div`
     margin: 0 40px;
     font-size:80px;
     font-weight: 300;
+    @media(max-width:480px){
+        margin: 0 85px; 
+    }
     color:${props => props.theme.textColor};
     span{
         position: relative;
@@ -121,6 +124,9 @@ const StyledSidebar = styled.div`
     margin: 0 50px;
     color:${props => props.theme.textColor};
     font-weight:900;
+    @media(max-width:480px){
+        margin: 0 85px; 
+    }
 }
 .hours{
     font-size:20px;
@@ -128,6 +134,7 @@ const StyledSidebar = styled.div`
     color:${props => props.theme.textLightColor};
     padding-left:5px;
     font-weight:bold;
+    
 }
 hr{
     border-width: 0px;

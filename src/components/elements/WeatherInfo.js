@@ -30,7 +30,7 @@ const WeatherInfo = ({ data,unit }) => (
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
                     <path strokeLinejoin="round" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="1" stroke="#293449" fill="none" d="M18.1 9.7C17.3 7.6 15.2 6 12.7 6C9.5 6 6.9 8.5 6.9 11.7C6.9 11.8 6.9 11.9 6.9 12C6.4 11.7 5.9 11.6 5.3 11.6C3.5 11.5 2 13 2 14.8C2 16.6 3.5 18 5.3 18H17.9C20.2 18 22 16 22 13.8C22 11.6 20.3 9.9 18.1 9.7Z"></path>
                 </svg>
-                <span>Cloudly  {data.clouds.all}%</span>
+                <span>Cloudly  {data.clouds.all} %</span>
             </div>)}
         </div>
     </>

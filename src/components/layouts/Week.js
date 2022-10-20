@@ -5,7 +5,7 @@ import { convertC, convertF } from '../../helpers';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 
-import 'swiper';
+import 'swiper/swiper-bundle.css';
 
 
 const Week = ({ data,tempUnit }) => (
@@ -35,8 +35,8 @@ const Week = ({ data,tempUnit }) => (
                     slidesPerView: 6,
                 },
             }}
-        //onSlideChange={() => console.log('slide change')}
-        //onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         >
             {data && data.map((day, i) => <SwiperSlide key={i.toString()}><div className="box_info">
                 <div>{new Date(day.dt * 1000).toLocaleString('en-US', { weekday: 'short' })}</div>

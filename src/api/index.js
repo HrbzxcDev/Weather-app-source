@@ -6,8 +6,8 @@ const API_URL_APPID = "https://api.openweathermap.org/data/2.5/weather";
 const DEFAULT_URL = `${API_URL_APPID}/?appid=${API_APPID}&lat=14.6042&lon=120.9822`;
 const SEARCH_BY_LOCATION = `${API_URL_APPID}?appid=${API_APPID}`; //&lat={lat}&lon={lon}
 
-const GET_NEXT_DAYS_HOURS = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely&appid=9331ad064e525f15191b64b3b9bd00db`; //&lat={lat}&lon={lon}
-const DEF_N_D_H = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely&appid=9331ad064e525f15191b64b3b9bd00db&lat=14.6042&lon=120.9822`;
+const GET_NEXT_DAYS_HOURS = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely&appid=${API_APPID}`; //&lat={lat}&lon={lon}
+const DEF_N_D_H = `https://api.openweathermap.org/data/2.5/onecall?exclude=minutely&appid=${API_APPID}&lat=14.6042&lon=120.9822`;
 
 //*** UNSPLASH ****//
 const URL_UNSPLASH = "https://api.unsplash.com/search/photos";

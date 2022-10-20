@@ -25,7 +25,7 @@ const StyledHeader = styled.div`
         div{
             font-family: "Averta-Regular";
             background:${props => props.theme.bgTemp};
-            border-radius:30px;
+            border-radius: 10px;
             width:39px;
             height:39px;
             color:${props => props.theme.bgTempText};

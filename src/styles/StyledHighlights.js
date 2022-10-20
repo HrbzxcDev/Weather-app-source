@@ -31,7 +31,7 @@ const StyledHighlights = styled.div`
         margin-left:1%;
         }
 
-        text-align:left;
+        text-align:center;
         font-size:17px;
         display: flex;
         justify-content: center;
