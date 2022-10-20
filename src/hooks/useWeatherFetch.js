@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-// import { SEARCH_BY_LOCATION, DEFAULT_URL, API_URL_APPID, API_APPID, GET_NEXT_DAYS_HOURS, DEF_N_D_H } from '../api';
-import { SEARCH_BY_LOCATION, DEFAULT_URL, API_URL_APPID, API_APPID, GET_NEXT_DAYS_HOURS, DEF_N_D_H, API_TEST } from '../api';
+import { SEARCH_BY_LOCATION, DEFAULT_URL, API_URL_APPID, API_APPID, GET_NEXT_DAYS_HOURS, DEF_N_D_H } from '../api';
 
 
 export const useWeatherFetch = (searchCity, lat = '', long = '') => {
@@ -23,7 +22,10 @@ export const useWeatherFetch = (searchCity, lat = '', long = '') => {
         if (searchCity) {
             setLoading(true);
             const search = searchCity.charAt(0).toUpperCase() + searchCity.slice(1);
-            fetchWeather(`${API_URL_APPID}/?q=${search}&APPID=${API_APPID}`).then((res) => {
+            fetchWeather(`${API_URL_APPID}/?q=${search}&appid=${API_APPID}`).then((res) => {
+
+                
+
                 //console.log('Getting api search');
                 if (res.cod !== '404') {
                     setWeather({ ...res, city: res.name, country: res.sys.country });
@@ -73,10 +75,10 @@ export const useWeatherFetch = (searchCity, lat = '', long = '') => {
             setWeather({ ...res, city: res.name, country: res.sys.country });
         });
         //fetch next days
-        // fetchWeather(`${DEF_N_D_H}`).then((res) => {
-        //     setWeather(prev => ({ ...prev, daily: res.daily, hourly: res.hourly, current: res.current }));
-        //     setLoading(false);
-        // });
+        fetchWeather(`${DEF_N_D_H}`).then((res) => {
+            setWeather(prev => ({ ...prev, daily: res.daily, hourly: res.hourly, current: res.current }));
+            setLoading(false);
+        });
 
 
     }, []);

@@ -4,7 +4,9 @@ import { convertC, convertF } from '../../helpers';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
+
 import 'swiper';
+
 
 const Week = ({ data,tempUnit }) => (
     <StyledWeek>

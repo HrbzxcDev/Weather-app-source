@@ -44,8 +44,8 @@ const Dashboard = () => {
     unitModeChanged(enabled);
    }
 
-    // console.log("location", lat, long);
-    // console.log('Weather', weather);
+    //console.log("location", lat, long);
+    //console.log('Weather', weather);
     
     useEffect(()=>{
         //default fetching..

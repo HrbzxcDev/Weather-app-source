@@ -13,8 +13,8 @@ const Header = ({ nightMode, nightModeCallback, showDaysCallback, showActive, un
     return (
         <StyledHeader>
             <div className="today-week">
-                <span className={`today ${showActive ? "" : "active"}`} onClick={() => enableToday(true)}>Today</span>
-                <span className={`week  ${showActive ? "active" : ""}`} onClick={() => enableToday(false)}>Week</span>
+                <span className={`today ${showActive ? "active" : ""}`} onClick={() => enableToday(true)}>Today</span>
+                <span className={`week  ${showActive ? "" : "active"}`} onClick={() => enableToday(false)}>Week</span>
             </div>
             <div className="temperature">
                 <div className={`celsius ${unitMode ? "" : "active"}`} onClick={() => changedTemp(false)}>
@@ -28,7 +28,7 @@ const Header = ({ nightMode, nightModeCallback, showDaysCallback, showActive, un
                 <input type="checkbox" className="checkbox" id="chk" checked={nightMode} onChange={nightModeCallback} />
                 <label className="label" htmlFor="chk">
                     <div className="sun"><IoIosSunny size={15} /></div>
-                    <div className="moon"><RiMoonClearFill size={13} /></div>
+                    <div className="moon"><RiMoonClearFill size={12} /></div>
                     <div className="ball"></div>
                 </label>
             </div>

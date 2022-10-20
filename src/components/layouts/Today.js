@@ -3,9 +3,9 @@ import { StyledToday } from '../../styles';
 import { convertC, convertF } from '../../helpers';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper';
+
 
 const Today = ({ data,tempUnit }) => (
 <StyledToday>
