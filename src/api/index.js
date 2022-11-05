@@ -15,10 +15,6 @@ const SEARCH_BY_WORD = `${URL_UNSPLASH}?client_id=${API_UNPSLASH}&page=1&query=`
 const SEARCH_DEFAULT = `${URL_UNSPLASH}?client_id=${API_UNPSLASH}&page=1&query=Spain`;
 
 
-// https://api.openweathermap.org/data/2.5/weather?q=manila&appid=9331ad064e525f15191b64b3b9bd00db
-
-
-
 export {
   API_URL_APPID,
   API_APPID,
